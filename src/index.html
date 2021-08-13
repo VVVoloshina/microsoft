@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meet Surface Book</title>
+  <link rel="icon" href="./images/title-lofgo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+  * {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+  padding-bottom: 30px;
+  margin-bottom: 50px;
+}
+
+.vertical-line {
+  margin: 0;
+  padding: 0;
+  border-left: 3px solid black;
+  height: 35px;
+  position: absolute;
+  left: 20%;
+  margin-left: 10px;
+  top: 25px;
+}
+
+.menu-logo {
+  position: relative;
+  top: 15px;
+  height: 10px;
+  width: 10px;
+}
+
+.header-nav {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.header-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.header-link {
+  display: inline-block;
+  font-weight: 500;
+  line-height: 54px;
+  font-size: 12px;
+  text-decoration: none;
+  color: #000;
+  position: relative;
+  right: 300px;
+}
+
+.header-block-left {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  left: 50px;
+  top: 10px;
+
+}
+
+.header-block-right{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  left: 250px;
+  top: 10px;
+}
+
+.bold {
+  font-size: 20px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  font-size: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1;
+}
+
+a {
+  text-decoration: none;
+}
+ a:hover {
+  text-decoration: underline;
+}
+
+i {
+  border: solid black;
+  border-width: 0px 2px 2px 0;
+  display: inline-block;
+  position: relative;
+  padding: 3px;
+  left: 6px;
+  bottom: 2px;
+}
+
+.arrow-down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.navigation-search {
+  width: 15px;
+  height: 15px;
+}
+
+.navigation-cart {
+  position: relative;
+  top: 3px;
+  width: 20px;
+  height: 20px;
+}
+
+.navigation-sign {
+  position: relative;
+  left: 5px;
+  top: 5px;
+  width: 20px;
+  height: 20px;
+}
+</style>
+</head>
+<body>
+  <header class="header">
+    <div class="vertical-line"></div>
+      <a href="logo" class="menu-logo">
+        <img src="./images/Microfoft1.png" alt="logo microfoft">
+      </a>
+      <nav class="header-nav">
+        <div class="header-block-left">
+        <ul class="header-nav">
+          <li class="header-item">
+            <a href="#surface" class="header-link bold "><b>Surface</b></a>
+          </li>
+          <li class="header-item">
+            <a
+              href="#computers" 
+                class="header-link"
+            >
+            Computers
+            <i class="arrow-down"></i>
+            </a>
+          </li>
+          <li class="header-item">
+            <a
+              href="#Computers for Business" class="header-link"
+            > 
+                Computers for Business
+                <i class="arrow-down"></i>
+            </a>
+          </li>
+          <li class="header-item">
+            <a
+              href="#Accessories"
+              class="header-link "
+            >
+              Accessories
+              <i class="arrow-down"></i>
+            </a>
+          </li>
+          <li class="header-item">
+            <a 
+              href="#Shop now"
+              class="header-link "
+            >
+                Shop now
+              <i class="arrow-down"></i>
+            </a>
+          </li>
+          <li class="nav__item" >
+            <a 
+              href="#Support" 
+              class="header-link "
+            >
+                Support
+              <i class="arrow-down"></i>
+            </a>
+          </li>
+    </div>
+    
+          <div class="header-block-right">
+            <li class="header-item">
+              <a
+                href="#All Microsoft"
+                class="header-link "
+              >
+                  All Microsoft
+                <i class="arrow-down"></i>
+              </a>
+
+            </li>
+            <li class="header-item">
+              <a
+                href="#Search"
+                class="header-link "
+              >
+                  Search
+              <img
+                  src="./images/search-icon.jpg"
+                  class="navigation-search"
+                  alt="search icon"
+              >
+              </a>
+            </li>
+            <li class="header-item">
+              <a 
+                href="#Cart"
+                class="header-link "
+              >
+                  Cart
+              <img
+                src="./images/cart-icon.png"
+                class="navigation-cart"
+                alt="cart icon"
+              >
+              </a>
+            </li>
+            <li class="header-item">
+              <a 
+                href="#Sign in"
+                class="header-link "
+              >
+                  Sign in
+              <img
+                src="./images/sign-in.png"
+                class="navigation-sign"
+                alt="sign-in icon"
+              >
+              </a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+  </header>
+</body>
+</html>
